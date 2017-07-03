@@ -85,15 +85,7 @@ public class Test {
                 +":"+new Test().isPrime(n));
     }
 
-    public static void LiuJiangWen() {
-        System.out.println("第六题第1小题：");
-        System.out.print("说说你对团队的理解:");
-        System.out.println("團隊是指一群互助互利、团结一致为统一目标和标准而坚毅奋斗到底的一群人。团队不仅强调个人的业务成果，更强调团队的整体业绩。团队是在集体讨论研究和决策以及信息共享和标准强化的基础上，强调通过队员奋斗得到胜利果实，这些果实超过个人业绩的总和。");
-        System.out.print("工作中你喜欢和什么样的人合作?");
-        System.out.println("答：是人都喜欢。");
-        System.out.print("不喜欢和什么样的人合作?");
-        System.out.println("答：没有什么不喜欢的。");
-    }
+
         //三.程序题：第3题
         public void getCount(String str){
             int c1=0;//空格数
