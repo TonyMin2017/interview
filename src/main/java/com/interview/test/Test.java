@@ -6,6 +6,6 @@ package com.interview.test;
 public class Test {
     //这是源代码：
     public static void main(String[] args) {
-        System.out.println("min 提交了原代码。");
+        System.out.println("閔粤在此方法中布置了作业：请各位收到后一一作答。");
     }
 }
