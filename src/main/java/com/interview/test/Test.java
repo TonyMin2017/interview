@@ -1,4 +1,6 @@
-ackage com.interview.test;
+package com.interview.test;
+
+import java.util.Scanner;
 
 /**
  * Created by THINK on 2017/7/3.
@@ -21,7 +23,11 @@ public class Test {
          *
          *
          */
+        //字符串统计各种字符的个数
+        //Test.stringCount();
     }
+
+
 
 
 }
