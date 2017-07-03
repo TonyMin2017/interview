@@ -6,6 +6,7 @@ package com.interview.test;
 public class Test {
     //这是源代码：
     public static void main(String[] args) {
+
         System.out.println("閔粤在此方法中布置了作业：请各位收到后一一作答。");
         /**
          * 一、问答题（40分）
@@ -61,6 +62,10 @@ public class Test {
          */
 
         LiuJiangWen();
+
+        int n=2;//编程题1题，判断n是否为质数
+        System.out.println("判断n是否为质数：数字"+n
+                +":"+new Test().isPrime(n));
     }
 
     public static void LiuJiangWen(){
@@ -71,6 +76,16 @@ public class Test {
         System.out.println("答：是人都喜欢。");
         System.out.print("不喜欢和什么样的人合作?");
         System.out.println("答：没有什么不喜欢的。");
+    }
+
+    //编程题1题，判断n是否为质数
+    public boolean isPrime(int n){
+        for (int i = 2; i<= Math.sqrt(n); i+=2){
+            if(n%i == 0){
+                return false;
+            }
+        }
+        return true;
     }
 
 }
