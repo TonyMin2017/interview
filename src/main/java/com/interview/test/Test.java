@@ -22,6 +22,11 @@ public class Test {
          * 5.内存溢出是指的什么？Java会不会内存溢出？ （黄卓燊）
          * 6.JSP中的动态include与静态include的区别是什么？ （应传福）
          * 7.运行时异常与一般异常有何异同？ （舒张）
+         *    运行时异常：runtime exception。由虚拟机接管的异常，可以不由我们处理，比如NullPointerException异常就是最常见的
+          运行时异常。RuntimeException体系包括错误的数组脚本越界（ArrayIndexOutOfBoundsException），空指针异常
+         （NullPointerException）、类转换异常（ClassCastException）等等.
+              一般异常：checked exception。checked 异常也就是我们经常遇到的IO异常，以及SQL异常都是这种异常。checked异常
+          必须try..catch处理或用throws声明继续抛给上层调用方法处理对于这种异常，这些异常并不是程序本身的错误,而是在应用环境中出现的外部错误.
          * 8.ArrayList与LinkedList的区别？ （黄卓燊）
          * 9.数据库的连接池的作用与工作机制分别是什么？ （梁梦楚）
          *    答：
