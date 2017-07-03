@@ -1,4 +1,4 @@
-ackage com.interview.test;
+package com.interview.test;
 
 /**
  * Created by THINK on 2017/7/3.
@@ -10,6 +10,10 @@ public class Test {
         /**
          * 1.==与equal有何区别？ （汤宇航）
          * 2.java语言里&的&&有何区别？（覃津传）
+         *    答：
+         *         单&时，左边无论真假，右边都进行运算；
+         *         双&时，如果左边为真，右边参与运算，如果左边为假，那么右边不参与运算。
+         *
          * 3.java的char型变量能否存储一个中文汉字？为什么？（毛璇）
          * 4.overload与override的区别？overload的方法 是否可以改变返回值？（覃认追）
          * 5.内存溢出是指的什么？Java会不会内存溢出？ （黄卓燊）
