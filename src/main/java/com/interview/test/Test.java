@@ -78,53 +78,6 @@ public class Test {
          *
          */
 
-        LiuJiangWen();
-
-        int n=2;//编程题1题，判断n是否为质数
-        System.out.println("判断n是否为质数：数字"+n
-                +":"+new Test().isPrime(n));
-    }
-
-
-        //三.程序题：第3题
-        public void getCount(String str){
-            int c1=0;//空格数
-            int c2=0;//阿拉伯数字数
-            int c3=0;//英文字符数
-            int c4=0;//中文字符数
-            int c5=0;//其它字符数
-            char [] chars = str.toCharArray();
-            for (int i = 0;i<chars.length;i++){
-                if (chars[i]==32){
-                    c1++;
-                }else if(chars[i]>=48&&chars[i]<=57){
-                    c2++;
-                }else if((chars[i]>=65&&chars[i]<=90)||( chars[i]>=97&&chars[i]<=122)){
-                    c3++;
-                }else if(chars[i]<=255){
-                    c5++;
-                }else{
-                    c4++;
-                }
-            }
-            System.out.println("空格数"+c1);
-            System.out.println("阿拉伯数字数"+c2);
-            System.out.println("英文字符数"+c3);
-            System.out.println("中文字符数"+c4);
-            System.out.println("其它字符数"+c5);
-            System.out.println("总字符数"+chars.length);
-        }
-
-
-
-    //编程题1题，判断n是否为质数
-    public boolean isPrime(int n){
-        for (int i = 2; i<= Math.sqrt(n); i+=2){
-            if(n%i == 0){
-                return false;
-            }
-        }
-        return true;
     }
 
 }
