@@ -6,6 +6,7 @@ package com.interview.test;
 public class Test {
     //这是源代码：
     public static void main(String[] args) {
+
         System.out.println("閔粤在此方法中布置了作业：请各位收到后一一作答。");
         /**
          * 一、问答题（40分）
@@ -19,6 +20,10 @@ public class Test {
          * 3.java的char型变量能否存储一个中文汉字？为什么？（毛璇）
          * 答：可以，Java使用的unicode字符，每个字符两个字节，一个汉字就是两个字节，所以可以。
          * 4.overload与override的区别？overload的方法 是否可以改变返回值？（覃认追）
+         * 答：overload与override的区别：
+         *          overload(重载)存在于父类和子类的同类中，方法名相同，参数类型、参数个数、参数顺序只有有一个不相同；
+         *          override(重写)存在于父类和子类之间；方法名相同，参数列表相同，返回值相同或者是其子类，返回值类型不能严与父类，方法被定义为final的不能被重写；
+         *     overload(重载)的方法可以改变返回值；因为方法重载与返回值无关，它对返回值的类型没有任何要求；
          * 5.内存溢出是指的什么？Java会不会内存溢出？ （黄卓燊）
          * 6.JSP中的动态include与静态include的区别是什么？ （应传福）
          *      答:两种都是在当前页面加载或包含另一页面内容，
@@ -26,6 +31,11 @@ public class Test {
                         2.静态<%@include>是用伪码实现，它不会检查所含文件的变化，适合包含静态页面，
                        只是简单的将被加载的资源拷贝到了当前，不能实现参数共享。
          * 7.运行时异常与一般异常有何异同？ （舒张）
+         *    运行时异常：runtime exception。由虚拟机接管的异常，可以不由我们处理，比如NullPointerException异常就是最常见的
+          运行时异常。RuntimeException体系包括错误的数组脚本越界（ArrayIndexOutOfBoundsException），空指针异常
+         （NullPointerException）、类转换异常（ClassCastException）等等.
+              一般异常：checked exception。checked 异常也就是我们经常遇到的IO异常，以及SQL异常都是这种异常。checked异常
+          必须try..catch处理或用throws声明继续抛给上层调用方法处理对于这种异常，这些异常并不是程序本身的错误,而是在应用环境中出现的外部错误.
          * 8.ArrayList与LinkedList的区别？ （黄卓燊）
          * 9.数据库的连接池的作用与工作机制分别是什么？ （梁梦楚）
          *    答：
@@ -63,6 +73,10 @@ public class Test {
          */
 
         LiuJiangWen();
+
+        int n=2;//编程题1题，判断n是否为质数
+        System.out.println("判断n是否为质数：数字"+n
+                +":"+new Test().isPrime(n));
     }
 
     public static void LiuJiangWen() {
@@ -104,5 +118,15 @@ public class Test {
         }
 
 
+
+    //编程题1题，判断n是否为质数
+    public boolean isPrime(int n){
+        for (int i = 2; i<= Math.sqrt(n); i+=2){
+            if(n%i == 0){
+                return false;
+            }
+        }
+        return true;
+    }
 
 }
