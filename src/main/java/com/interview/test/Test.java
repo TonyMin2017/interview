@@ -1,5 +1,7 @@
 package com.interview.test;
 
+import java.util.Scanner;
+
 /**
  * Created by THINK on 2017/7/3.
  */
@@ -78,6 +80,38 @@ public class Test {
          *
          */
 
+        Test.getStringCount();
+    }
 
-}
+    //统计字符串中各种字符的个数
+    public static void getStringCount(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("请输入一串字符串：");
+        String src = input.nextLine();
+        char[] ch = src.toCharArray();
+        int spaceCount = 0;
+        int numberCount = 0;
+        int engCount = 0;
+        int chineseCount = 0;
+        int otherCount = 0;
+        for(int i = 0; i < ch.length; i++){
+            if(ch[i] == '\u0020'){
+                spaceCount++;
+            }else if(ch[i] >= '\u0030' && ch[i] <= '\u0039'){
+                numberCount++;
+            }else if((ch[i] >= '\u0041' && ch[i] <= '\u005A') || (ch[i] >= '\u0061' && ch[i] <= '\u007A')){
+                engCount++;
+            }else if(ch[i] >= '\u4e00' && ch[i] <= '\u9fa5'){
+                chineseCount++;
+            }else{
+                otherCount++;
+            }
+        }
+
+        System.out.println("字符串中空格字符的个数是："+spaceCount);
+        System.out.println("字符串中数字字符的个数是："+numberCount);
+        System.out.println("字符串中英文字符的个数是："+engCount);
+        System.out.println("字符串中中文字符的个数是："+chineseCount);
+        System.out.println("字符串中其他字符的个数是："+otherCount);
+    }
 }
