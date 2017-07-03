@@ -6,6 +6,9 @@ package com.interview.test;
 public class Test {
     //这是源代码：
     public static void main(String[] args) {
+        int n=2;//编程题1题，判断n是否为质数
+        System.out.println("判断n是否为质数：数字"+n+":"+new Test().isPrime(n));
+
         System.out.println("閔粤在此方法中布置了作业：请各位收到后一一作答。");
         /**
          * 1.==与equal有何区别？ （汤宇航）
@@ -41,6 +44,13 @@ public class Test {
          */
 
     }
-
-
+    //编程题1题，判断n是否为质数
+    public boolean isPrime(int n){
+        for (int i = 2; i<= Math.sqrt(n); i+=2){
+            if(n%i == 0){
+                return false;
+            }
+        }
+        return true;
+    }
 }
