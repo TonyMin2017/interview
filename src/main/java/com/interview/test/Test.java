@@ -21,6 +21,10 @@ public class Test {
          * 4.overload与override的区别？overload的方法 是否可以改变返回值？（覃认追）
          * 5.内存溢出是指的什么？Java会不会内存溢出？ （黄卓燊）
          * 6.JSP中的动态include与静态include的区别是什么？ （应传福）
+         *      答:两种都是在当前页面加载或包含另一页面内容，
+                   区别：1.使用<jsp:include>动作标签实现时它总是会检查所含文件中的变化，适合包含动态页面，并且可以携带参数；
+                        2.静态<%@include>是用伪码实现，它不会检查所含文件的变化，适合包含静态页面，
+                       只是简单的将被加载的资源拷贝到了当前，不能实现参数共享。
          * 7.运行时异常与一般异常有何异同？ （舒张）
          *    运行时异常：runtime exception。由虚拟机接管的异常，可以不由我们处理，比如NullPointerException异常就是最常见的
           运行时异常。RuntimeException体系包括错误的数组脚本越界（ArrayIndexOutOfBoundsException），空指针异常
@@ -61,7 +65,17 @@ public class Test {
          *
          */
 
+        LiuJiangWen();
     }
 
+    public static void LiuJiangWen(){
+        System.out.println("第六题第1小题：");
+        System.out.print("说说你对团队的理解:");
+        System.out.println("團隊是指一群互助互利、团结一致为统一目标和标准而坚毅奋斗到底的一群人。团队不仅强调个人的业务成果，更强调团队的整体业绩。团队是在集体讨论研究和决策以及信息共享和标准强化的基础上，强调通过队员奋斗得到胜利果实，这些果实超过个人业绩的总和。");
+        System.out.print("工作中你喜欢和什么样的人合作?");
+        System.out.println("答：是人都喜欢。");
+        System.out.print("不喜欢和什么样的人合作?");
+        System.out.println("答：没有什么不喜欢的。");
+    }
 
 }
