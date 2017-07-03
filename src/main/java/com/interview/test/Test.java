@@ -111,5 +111,6 @@ public class Test {
         System.out.println("字符串中中文字符的个数是："+chineseCount);
         System.out.println("字符串中其他字符的个数是："+otherCount);
 
+
     }
 }
