@@ -1,4 +1,4 @@
-ackage com.interview.test;
+package com.interview.test;
 
 /**
  * Created by THINK on 2017/7/3.
@@ -9,7 +9,12 @@ public class Test {
         System.out.println("閔粤在此方法中布置了作业：请各位收到后一一作答。");
         /**
          * 1.==与equal有何区别？ （汤宇航）
+         * 答: ==比较的是地址,而 equal比较的是值(内容)
          * 2.java语言里&的&&有何区别？（覃津传）
+         *    答：
+         *         单&时，左边无论真假，右边都进行运算；
+         *         双&时，如果左边为真，右边参与运算，如果左边为假，那么右边不参与运算。
+         *
          * 3.java的char型变量能否存储一个中文汉字？为什么？（毛璇）
          * 答：可以，Java使用的unicode字符，每个字符两个字节，一个汉字就是两个字节，所以可以。
          * 4.overload与override的区别？overload的方法 是否可以改变返回值？（覃认追）
