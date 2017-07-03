@@ -48,6 +48,8 @@ public class Test {
          * 1.编写一个函数判读n是否为质数 ？（陈广林）
          * 2.编写一个F(n)，求从小到大的n个质数之和？ （陈超嫦）
          * 3.编写一个程序，统计从键盘中输入的5种字符数？ （张雄英）
+         * 答:
+         *        详情见 public void getCount(String str)
          * 四、思考题：（10分）
          * 1.编写一个程序交换a=1,b=2的值，不得使用中间变量；
          * 2.Java是完全面向对象的语言吗？为什么？ （曾翔伟）
@@ -63,7 +65,7 @@ public class Test {
         LiuJiangWen();
     }
 
-    public static void LiuJiangWen(){
+    public static void LiuJiangWen() {
         System.out.println("第六题第1小题：");
         System.out.print("说说你对团队的理解:");
         System.out.println("團隊是指一群互助互利、团结一致为统一目标和标准而坚毅奋斗到底的一群人。团队不仅强调个人的业务成果，更强调团队的整体业绩。团队是在集体讨论研究和决策以及信息共享和标准强化的基础上，强调通过队员奋斗得到胜利果实，这些果实超过个人业绩的总和。");
@@ -72,5 +74,35 @@ public class Test {
         System.out.print("不喜欢和什么样的人合作?");
         System.out.println("答：没有什么不喜欢的。");
     }
+        //三.程序题：第3题
+        public void getCount(String str){
+            int c1=0;//空格数
+            int c2=0;//阿拉伯数字数
+            int c3=0;//英文字符数
+            int c4=0;//中文字符数
+            int c5=0;//其它字符数
+            char [] chars = str.toCharArray();
+            for (int i = 0;i<chars.length;i++){
+                if (chars[i]==32){
+                    c1++;
+                }else if(chars[i]>=48&&chars[i]<=57){
+                    c2++;
+                }else if((chars[i]>=65&&chars[i]<=90)||( chars[i]>=97&&chars[i]<=122)){
+                    c3++;
+                }else if(chars[i]<=255){
+                    c5++;
+                }else{
+                    c4++;
+                }
+            }
+            System.out.println("空格数"+c1);
+            System.out.println("阿拉伯数字数"+c2);
+            System.out.println("英文字符数"+c3);
+            System.out.println("中文字符数"+c4);
+            System.out.println("其它字符数"+c5);
+            System.out.println("总字符数"+chars.length);
+        }
+
+
 
 }
